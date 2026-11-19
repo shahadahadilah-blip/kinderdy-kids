@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.kinderdy.kids",
+    "sha256_cert_fingerprints": ["F3:D7:30:37:82:15:89:77:D2:A4:76:44:AD:82:D3:D9:46:E4:C7:FA:3F:1A:17:63:05:BD:90:E2:F2:84:F8:96"]
+  }
+}]
