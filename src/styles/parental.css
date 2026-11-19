@@ -1,0 +1,58 @@
+/* ---------- parental control / setup ---------- */
+.text-input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 16px;
+  border-radius: 14px;
+  border: 2px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+  transition: border-color .2s, background .2s;
+}
+.text-input::placeholder { color: var(--muted); font-weight: 600; }
+.text-input:focus { border-color: var(--primary); background: var(--surface); }
+
+.avatar-pick {
+  width: 48px; height: 48px; border-radius: 14px;
+  border: 2px solid var(--line); background: var(--surface-2);
+  font-size: 24px; display: grid; place-items: center;
+  transition: transform .16s var(--ease-pop), border-color .2s;
+}
+.avatar-pick.on { border-color: var(--primary); transform: scale(1.06); }
+
+.age-mini {
+  display: grid; place-items: center; gap: 1px;
+  padding: 8px 0; border-radius: 12px;
+  border: 2px solid var(--line); background: var(--surface-2);
+  font-size: 13px; transition: transform .16s var(--ease-pop), border-color .2s;
+}
+.age-mini span { font-size: 15px; line-height: 1; }
+.age-mini b { font-family: var(--font-display); font-size: 15px; }
+.age-mini.on { border-color: var(--primary); background: color-mix(in srgb, var(--primary) 16%, transparent); }
+.age-mini:active { transform: scale(.94); }
+
+.profile-card { transition: transform .2s var(--ease-pop), border-color .2s; }
+.profile-card:hover { transform: translateY(-4px); }
+.profile-card:active { transform: scale(.97); }
+
+.pin-dots { display: flex; gap: 10px; justify-content: center; padding: 6px 0; }
+.pin-dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  border: 2px solid var(--line); background: transparent;
+  transition: background .15s, transform .15s;
+}
+.pin-dot.on { background: var(--primary); border-color: var(--primary); transform: scale(1.1); }
+
+.pin-pad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.pin-key {
+  min-height: 54px; border-radius: 14px;
+  border: 1px solid var(--line); background: var(--surface-2);
+  font-size: 20px; font-weight: 800; font-family: var(--font-display);
+  transition: transform .12s var(--ease-pop), background .2s;
+}
+.pin-key:active { transform: scale(.94); background: var(--surface); }
+.pin-key:disabled { opacity: .4; }
