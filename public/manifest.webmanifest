@@ -1,0 +1,15 @@
+{
+  "name": "KINDERDY KIDS",
+  "short_name": "Kinderdy",
+  "description": "Belajar sambil bermain — Matematik, Jawi dan Bahasa Melayu untuk umur 4–12 tahun.",
+  "lang": "ms",
+  "start_url": "/kinderdy-kids/",
+  "scope": "/kinderdy-kids/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d0b2b",
+  "theme_color": "#7c5cff",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
