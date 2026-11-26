@@ -49,6 +49,9 @@ export function WorldSelect({ age, band, onWorld, onTab }: { age: number; band: 
                   <span style={{ fontSize: 34 }}>{w.icon}</span>
                 </div>
                 <p className="wc-blurb">{w.blurb}</p>
+                {w.id === 'jawi' && (
+                  <span className="tag tag-soon" style={{ marginTop: 8 }}>Beta · ejaan belum disemak</span>
+                )}
               </div>
               <div className="wc-foot">
                 {live > 0 ? <span>▶ {live} topik sedia dimainkan</span> : <span>🔒 Akan datang</span>}

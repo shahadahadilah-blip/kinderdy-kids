@@ -430,7 +430,7 @@ export const WORLDS: World[] = [
   },
   {
     id: 'jawi', subject: 'Pendidikan Islam · Jawi', name: 'Jawi Adventure', icon: '✒️',
-    blurb: 'Kenali huruf, cerakinkan dan gabungkan Jawi.',
+    blurb: 'Beta — ejaan Jawi belum disemak sepenuhnya.',
     colorA: '#A855F7', colorB: '#22D3EE',
     bands: ['junior', 'explorer'], topics: jawiTopics, status: 'live',
   },
