@@ -387,6 +387,25 @@ const jawiTopics: Topic[] = [
     gen: genMaster,
     mixedKinds: ['jawiSpell', 'jawiSplit', 'jawiJoin'],
   },
+  {
+    id: 'jawi-asas', title: 'Asas Tulisan Jawi', subtitle: 'Tahun 1–2 · Pendidikan Islam (Jawi)', icon: '✒️',
+    status: 'live', years: [1, 2], minutes: 8,
+    note: [
+      { kind: 'bullets', title: 'Huruf yang tidak bersambung selepasnya', items: ['ا د ذ ر ز و ۏ', 'Huruf ini berhenti selepas ditulis — huruf berikutnya bermula semula.', 'Contoh: دوري (duri) — د berhenti sebelum و.'] },
+      { kind: 'bullets', title: 'E pepet', items: ['Tiada huruf khas untuk e pepet.', 'Di awal perkataan, e pepet ditulis dengan alif: امس (emas), امق (emak), انم (enam).', 'Di tengah perkataan, e pepet tidak ditulis.'] },
+      { kind: 'bullets', title: 'Suku kata terbuka (KV)', items: ['Konsonan + vokal, tiada konsonan selepas vokal.', 'مارا (mara) · جيلي (cili)', 'بوکو (buku) · کوڤي (kopi)', 'کريتا (kereta)'] },
+      { kind: 'bullets', title: 'Suku kata tertutup (KVK)', items: ['Konsonan + vokal + konsonan.', 'سمبل (sambal) · رنده (rendah) · تندڠ (tendang)', 'Vokal a pada suku kata tertutup tidak ditulis.'] },
+    ],
+    games: [G.quiz([4, 5, 5]), G.arrange(), G.match([2, 2, 3])],
+    pool: [
+      { id: 'ja1', kind: 'mc', d: 1, prompt: 'Huruf manakah TIDAK bersambung dengan huruf selepasnya?', options: ['ا', 'ب', 'ت', 'س'], answer: 0, hint: 'Ia huruf pertama dalam senarai.', explain: 'ا (alif) tidak bersambung dengan huruf selepasnya.' },
+      { id: 'ja2', kind: 'mc', d: 1, prompt: 'Perkataan “emas” dieja?', options: ['امس', 'امق', 'انم', 'اِمس'], answer: 0, hint: 'e pepet di awal ditulis dengan alif.', explain: 'emas = امس (alif + mim + sin).' },
+      { id: 'ja3', kind: 'mc', d: 2, prompt: 'Perkataan “sambal” dieja?', options: ['سمبل', 'سامبل', 'سمبال', 'سمبلل'], answer: 0, hint: 'Vokal a pada suku kata tertutup tidak ditulis.', explain: 'sambal = سمبل.' },
+      { id: 'ja4', kind: 'mc', d: 2, prompt: 'Antara ini, yang manakah suku kata TERTUTUP (KVK)?', options: ['sambal', 'buku', 'cili', 'kopi'], answer: 0, hint: 'KVK ada konsonan selepas vokal.', explain: 'sambal = sam-bal (KVK + KVK).' },
+      { id: 'ja5', kind: 'arrange', d: 2, prompt: 'Susun huruf menjadi perkataan “enam”', tokens: ['ا', 'ن', 'م'], text: 'انم', hint: 'e pepet di awal guna alif.', explain: 'enam = ا + ن + م = انم.' },
+      { id: 'ja6', kind: 'match', d: 2, prompt: 'Padankan perkataan dengan ejaan Jawi', pairs: [{ a: 'mara', b: 'مارا' }, { a: 'buku', b: 'بوکو' }, { a: 'rendah', b: 'رنده' }], hint: 'Suku kata terbuka vs tertutup.', explain: 'mara=مارا, buku=بوکو, rendah=رنده.' },
+    ],
+  },
 ]
 
 /* ================= DUNIA ================= */
